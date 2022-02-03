@@ -1,4 +1,4 @@
-'use strict';
+
 var pageHeader = document.querySelector('.page-header');
 var headerToggle = document.querySelector('.page-header__toggle');
 
@@ -13,3 +13,5 @@ headerToggle.addEventListener('click', function () {
     pageHeader.classList.remove('page-header--opened');
   }
 });
+
+
