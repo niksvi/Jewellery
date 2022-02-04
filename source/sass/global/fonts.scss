@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/poppins-400.woff2") format("woff2"),
+    url("../fonts/poppins-400.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+    url("../fonts/poppins-500.woff2") format("woff2"),
+    url("../fonts/poppins-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("../fonts/poppins-700.woff2") format("woff2"),
+    url("../fonts/poppins-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CormorantGaramond";
+  font-style: italic;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/cormorant_garamond-400i.woff2") format("woff2"),
+    url("../fonts/cormorant_garamond-400i.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CormorantGaramond";
+  font-style: italic;
+  font-weight: 500;
+  src: local(""),
+    url("../fonts/cormorant_garamond-500i.woff2") format("woff2"),
+    url("../fonts/cormorant_garamond-500i.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CormorantGaramond";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""),
+    url("../fonts/cormorant_garamond-600.woff2") format("woff2"),
+    url("../fonts/cormorant_garamond-600.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CormorantGaramond";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("../fonts/cormorant_garamond-700.woff2") format("woff2"),
+    url("../fonts/cormorant_garamond-700.woff") format("woff");
+}

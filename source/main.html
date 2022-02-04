@@ -20,9 +20,9 @@
 
 <body class="page wrapper">
   <header class="page-header no-js">
-    <div class="page-header__wrapper">
-      <div class="page-header__upper-row no-js">
-        <div class="page-header__search">
+    <div class="page-header__wrapper menu">
+      <div class="page-header__upper-row no-js menu__upper-row">
+        <div class="page-header__search menu__search">
           <label for="search">
             <a href="#">
               <svg width="14" height="14">
@@ -37,20 +37,50 @@
             <use xlink:href="img/sprite_auto.svg#logo"></use>
           </svg>
         </a>
+        <div class="page-header__login">
+          <a href="popup.html" class="login-link">Login</a>
+          <a href="#">Cart 0</a>
+        </div>
+        <div class="menu__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu__cart">
+          <a href="#"><svg width="20" height="18" fill="none">
+              <use xlink:href="img/sprite_auto.svg#cart"></use>
+            </svg></a>
+        </div>
       </div>
-
-      <div class="page-header__bottom-row">
+      <div class="page-header__bottom-row menu__bottom-row">
         <nav class="nav no-js">
           <div class="nav__main">
             <ul>
-              <li><a href="main.html">Main</a></li>
-              <li><a href="catalog.html">Catalog</a></li>
+              <li><a href="#">What’s new</a> </li>
+              <li><a href="#">Chokers</a></li>
+              <li><a href="#">Necklaces</a></li>
+              <li><a href="#">Rings</a></li>
+              <li><a href="#">Earrings</a></li>
             </ul>
           </div>
+          <div class="nav__nav">
+            <ul>
+              <li><a href="#">About CH</a></li>
+              <li><a href="#">Stores & Hours</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="nav__login"><a href="popup.html" class="login-link">Login</a></div>
         </nav>
       </div>
     </div>
   </header>
+
+  <main class="page-main"></main>
+
+  <footer></footer>
+
+  <script src="js/main.js"></script>
 </body>
 
 

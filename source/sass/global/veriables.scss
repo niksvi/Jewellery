@@ -1,0 +1,22 @@
+
+/// colors
+
+$black: #000000;
+$white: #ffffff;
+$dark: #1d1613;
+$grey: #9b9997;
+$brown: #a87b62;
+$cream: #f0eae4;
+
+//views
+
+$desktop: 1023px;
+$tablet: 767px;
+
+/// mixins
+
+@mixin font($weight, $size, $line-height) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+}
