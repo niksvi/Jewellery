@@ -1,0 +1,148 @@
+.article {
+  display: grid;
+  grid-template-columns: repeat(2, 48.72%);
+  grid-template-rows: repeat(2, min-content);
+  row-gap: 30px;
+  column-gap: 30px;
+
+  @media (max-width: $desktop) {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, min-content);
+    row-gap: 50px;
+    column-gap: 0;
+  }
+
+  @media (max-width: $tablet) {
+    row-gap: 40px;
+  }
+
+  p {
+    @include font(500, 14px, 18px);
+    color: $grey;
+    margin: 0 0 12px 0;
+  }
+
+  h3 {
+    font-family: "CormorantGaramond", "Times New Roman", serif;
+
+    @include font(600, 26px, 34px);
+    color: $black;
+    margin: 0 0 37px 0;
+  }
+
+  a {
+    color: $dark;
+    border-bottom: 1px solid $brown;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.article__acticle {
+  display: flex;
+
+  @media (max-width: $tablet) {
+    display: block;
+    padding: 256px 0 0 0;
+  }
+}
+
+.article__care {
+  justify-content: flex-end;
+  background: url("../img/main-page/jess-harper-desk.png") 0 0/285px 100% no-repeat;
+
+  @media (max-width: $desktop) {
+    background: url("../img/main-page/jess-harper-tab.png") 0 0/339px 100% no-repeat;
+  }
+
+  @media (max-width: $tablet) {
+    justify-content: center;
+    background: url("../img/main-page/jess-harper-mob.png") 50% 0/100% 256px no-repeat;
+  }
+}
+
+.article__descp {
+  text-align: center;
+  background: $cream;
+}
+
+.article__care-descp {
+  padding: 68px 61px 75px;
+
+  h3 {
+    width: 163px;
+    margin: 0 auto 37px;
+  }
+
+  @media (max-width: $desktop) {
+    padding: 68px 88px 75px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 46px 64px 54px;
+  }
+}
+
+.article__power {
+  background: url("../img/main-page/alex-holyoake-desk.png") 100% 0/285px 100% no-repeat;
+
+  @media (max-width: $desktop) {
+    background: url("../img/main-page/alex-holyoake-tab.png") 100% 0/339px 100% no-repeat;
+  }
+
+  @media (max-width: $tablet) {
+    justify-content: center;
+    background: url("../img/main-page/alex-holyoake-mob.png") 0 0/100% 256px no-repeat;
+  }
+}
+
+.article__power-descp {
+  padding: 68px 76px 75px;
+
+  & h3 {
+    width: 92px;
+    margin: 0 auto 37px;
+  }
+
+  @media (max-width: $desktop) {
+    padding: 68px 102px 75px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 45px 76px 55px;
+  }
+}
+
+.article__trends {
+  grid-area: 1/2/3/3;
+  background: url("../img/main-page/alve-odonnell-desk.png") 0 0/100% 100% no-repeat;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  @media (max-width: $desktop) {
+    grid-area: 3/1/4/2;
+    padding: 0 0 0 339px;
+    background: url("../img/main-page/alve-odonnell-tab.png") 0 0/339px 100% no-repeat;
+  }
+
+  @media (max-width: $tablet) {
+    justify-content: center;
+    padding: 256px 0 0 0;
+    background: url("../img/main-page/alve-odonnell-mob.png") 0 0/100% 256px no-repeat;
+  }
+}
+
+.article__trends-descp {
+  padding: 68px 74px 108px;
+
+  @media (max-width: $desktop) {
+    padding: 86px 100px 93px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 62px 76px 72px;
+  }
+}
+

@@ -1,0 +1,51 @@
+.blog {
+  padding: 0 30px 0;
+
+  @media (max-width: $tablet) {
+    padding: 0 15px 0;
+  }
+}
+
+.blog__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 0 120px 0;
+
+  @media (max-width: $desktop) {
+    max-width: 678px;
+    padding: 0 0 70px 0;
+  }
+
+  @media (max-width: $tablet) {
+    max-width: 290px;
+    padding: 0 0 60px 0;
+  }
+}
+
+.blog__title {
+  text-align: center;
+  padding: 0 0 66px 0;
+
+  h2 {
+    font-family: "CormorantGaramond", "Times New Roman", serif;
+
+    @include font(600, 34px, 44px);
+    letter-spacing: 0.03em;
+    margin: 0 0 18px 0;
+  }
+
+  a {
+    border-bottom: 1px solid $brown;
+    color: $dark;
+    padding: 0 0 5px 0;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    padding: 0 0 56px 0;
+  }
+}
+

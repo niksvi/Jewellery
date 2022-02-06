@@ -1,0 +1,56 @@
+.promo {
+  background: $brown url("../img/main-page/promo_bg-desk.png") 50% 0/100% 100% no-repeat;
+
+  @media (max-width: $desktop) {
+    background: $brown url("../img/main-page/promo_bg-tab.png") 50% 0/100% 100% no-repeat;
+  }
+
+  @media (max-width: $tablet) {
+    background: $brown url("../img/main-page/promo_bg-mob.png") contain no-repeat;
+  }
+
+  @media (max-width: 450px) {
+    background: $brown url("../img/main-page/promo_bg-mob.png") 50% 0/100% 100% no-repeat;
+  }
+
+  h2 {
+    font-family: "CormorantGaramond", "Times New Roman", serif;
+
+    @include font(600, 45px, 58px);
+    color: $white;
+    letter-spacing: 0.03em;
+    margin: 0 0 -6px 0;
+
+    @media (max-width: $tablet) {
+      @include font(600, 38px, 49px);
+    }
+  }
+
+  p {
+    font-family: "CormorantGaramond", "Times New Roman", serif;
+
+    @include font(400, 38px, 49px);
+    font-style: italic;
+    color: $white;
+    margin: 0;
+
+    @media (max-width: $tablet) {
+      @include font(400, 34px, 44px);
+    }
+  }
+}
+
+.promo__wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 180px 0 180px 0;
+  text-align: center;
+
+  @media (max-width: $desktop) {
+    padding: 180px 17px 182px 0;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 188px 0 188px 0;
+  }
+}
