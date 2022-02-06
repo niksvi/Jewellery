@@ -1,0 +1,17 @@
+.page-footer {
+  flex: 0 0 auto;
+  background-color: $black;
+}
+
+.page-footer__wrapper {
+
+  padding: 88px 98px 77px 98px;
+
+  @media (max-width: $desktop) {
+    padding: 47px 150px 35px 45px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 49px 15px 55px 15px;
+  }
+}

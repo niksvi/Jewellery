@@ -1,0 +1,307 @@
+.contacts {
+  display: flex;
+
+  @media (max-width: $desktop) {
+    flex-wrap: wrap;
+  }
+}
+
+.contacts__sign-up {
+  flex: 1 0 42.73%;
+  margin: 0 7.52% 20px 0;
+
+  h2 {
+    font-family: "CormorantGaramond", "Times New Roman", serif;
+
+    @include font(600, 34px, 44px);
+    color: $white;
+    letter-spacing: 0.03em;
+    margin: 0 0 10px 0;
+  }
+
+  p {
+    @include font(400, 16px, 21px);
+    color: $grey;
+    margin: 0 0 39px 0;
+  }
+
+  @media (max-width: $desktop) {
+    flex: 1 1 100%;
+    margin: 0 0 47px 0;
+
+    form {
+      label {
+        margin: 0 10px 0 0;
+      }
+
+      button {
+        padding: 0 0 10px 0;
+        margin: 0 10px 0 0;
+
+        span {
+          margin: 0 14px 0 0;
+        }
+      }
+    }
+
+    p {
+      margin: 0 0 45px 0;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    h2 {
+      max-width: 213px;
+      margin: 0 0 14px 0;
+    }
+
+    p {
+      max-width: 226px;
+      margin: 0 0 41px 0;
+    }
+
+    form {
+      label {
+        padding: 0 0 10px 0;
+        margin: 0;
+      }
+
+      input {
+        width: 150px;
+        font-size: 14px;
+        max-width: 180px;
+      }
+
+      button {
+        padding: 0 0 8px 0;
+        margin: 0;
+
+        span {
+          margin: 0 13px 0 0;
+        }
+      }
+    }
+  }
+}
+
+.contacts__sign-up form {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $white;
+
+  label {
+    display: flex;
+    padding: 0 0 8px 0;
+    flex-grow: 1;
+  }
+
+  button {
+    font-family: "Poppins", "Arial", sans-serif;
+    font-style: normal;
+
+    @include font(500, 16px, 21px);
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    color: $white;
+    background-color: inherit;
+    border: 0;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    span {
+      margin: 0 10px 0 0;
+    }
+  }
+
+  input {
+    font-family: "Poppins", "Arial", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    background-color: inherit;
+    border: 0;
+    color: $grey;
+    width: 100%;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active,
+    &:focus {
+      border: 0;
+    }
+  }
+
+  svg {
+    stroke: $white;
+  }
+}
+
+.contacts__purchase {
+  flex: 1 0 15.13%;
+  margin: 5px 5.04% 0 0;
+
+  @media (max-width: $desktop) {
+    flex: 1 1 29.32%;
+    margin: 0 85px 20px 0;
+  }
+
+  @media (max-width: $tablet) {
+    flex: 1 0 100%;
+    margin: 0 0 44px 0;
+  }
+}
+
+.contacts__purchase ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0 0 20px 0;
+  }
+
+  li:last-child {
+    margin: 0 0 0 0;
+  }
+
+  a {
+    color: $white;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.contacts__about {
+
+  flex: 1 0 11.62%;
+  margin: 6px 7.26% 0 0;
+
+  @media (max-width: $desktop) {
+    flex: 1 0 20.24%;
+    margin: 0 85px 0 0;
+  }
+
+  @media (max-width: $tablet) {
+    flex: 1 0 100%;
+    margin: 0 0 50px 0;
+  }
+}
+
+.contacts__about ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0 0 20px 0;
+  }
+
+  li:last-child {
+    margin: 0 0 0 0;
+  }
+
+  a {
+    color: $white;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+
+.contacts__contacts ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0 0 20px 0;
+    width: inherit;
+
+    a:hover {
+      opacity: 0.7;
+    }
+  }
+
+  svg {
+    fill: $white;
+    margin: 0 10px 0 0;
+  }
+
+
+  li:first-child {
+    svg {
+      margin: 0 13px 0 4px;
+    }
+  }
+
+  li:last-child {
+    margin: 0;
+  }
+
+  a {
+    span {
+      color: $white;
+    }
+  }
+}
+
+.contacts__contacts {
+  min-width: 115px;
+  margin: 6px 0 0 0;
+
+  @media (max-width: $desktop) {
+    margin: 0;
+  }
+
+  @media (max-width: $tablet) {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        margin: 0 14px 0 0;
+      }
+
+      a {
+        span {
+          display: none;
+        }
+      }
+
+      li:first-child {
+        svg {
+          width: 12px;
+          height: 21px;
+          margin: -3px 14px 0 0;
+        }
+      }
+
+      li:first-child + li,
+      li:nth-child(3n) {
+        svg {
+          width: 20px;
+          height: 21px;
+          margin: -3px 16px 0 0;
+        }
+      }
+    }
+
+    li:last-child {
+      margin: 0;
+
+      svg {
+        width: 20px;
+        height: 18px;
+      }
+    }
+  }
+}
+
