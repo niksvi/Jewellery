@@ -13,7 +13,7 @@
   h2 {
     font-family: "CormorantGaramond", "Times New Roman", serif;
 
-    @include font(600, 34px, 44px);
+    @include font(700, 34px, 44px);
     color: $white;
     letter-spacing: 0.03em;
     margin: 0 0 10px 0;

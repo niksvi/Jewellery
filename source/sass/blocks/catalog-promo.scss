@@ -1,0 +1,52 @@
+.catalog-promo {
+  background: $brown url("../img/catalog/promo_bg-desk.png") 50% 0/100% 100% no-repeat;
+
+  @media (max-width: $desktop) {
+    background: $brown url("../img/catalog/promo_bg-tab.png") 50% 0/100% 100% no-repeat;
+  }
+
+  @media (max-width: $tablet) {
+    background: $brown url("../img/catalog/promo_bg-mob.png") 50% 0/100% 100% no-repeat;
+  }
+}
+
+.catalog-promo__wrapper {
+  max-width: 490px;
+  margin: 0 auto;
+  padding: 90px 0 94px 0;
+  text-align: center;
+
+  @media (max-width: $desktop) {
+    padding: 92px 0 94px 0;
+  }
+
+  @media (max-width: $tablet) {
+    max-width: 248px;
+    padding: 79px 0 84px 0;
+  }
+
+  h2 {
+    font-family: "CormorantGaramond", "Times New Roman", serif;
+
+    @include font(700, 34px, 44px);
+    color: $white;
+    margin: 0 0 2px 0;
+  }
+
+  p {
+    font-family: "CormorantGaramond", "Times New Roman", serif;
+
+    @include font(500, 22px, 29px);
+    font-style: italic;
+    color: $white;
+    margin: 0 -3px 0 0;
+
+    @media (max-width: $desktop) {
+      margin: 0;
+    }
+
+    @media (max-width: $tablet) {
+      line-height: 26px;
+    }
+  }
+}

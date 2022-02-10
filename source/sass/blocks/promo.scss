@@ -16,13 +16,13 @@
   h2 {
     font-family: "CormorantGaramond", "Times New Roman", serif;
 
-    @include font(600, 45px, 58px);
+    @include font(700, 45px, 58px);
     color: $white;
     letter-spacing: 0.03em;
     margin: 0 0 -6px 0;
 
     @media (max-width: $tablet) {
-      @include font(600, 38px, 49px);
+      @include font(700, 38px, 49px);
     }
   }
 

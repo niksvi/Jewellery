@@ -29,7 +29,7 @@
   h2 {
     font-family: "CormorantGaramond", "Times New Roman", serif;
 
-    @include font(600, 34px, 44px);
+    @include font(700, 34px, 44px);
     letter-spacing: 0.03em;
     margin: 0 0 18px 0;
   }
@@ -48,4 +48,3 @@
     padding: 0 0 56px 0;
   }
 }
-

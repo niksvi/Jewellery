@@ -1,0 +1,185 @@
+.stock__stock {
+  margin: 0 0 71px 0;
+}
+
+.stock__stock ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 31.03%);
+  column-gap: 30px;
+  row-gap: 35px;
+  justify-content: space-between;
+
+  @media (max-width: 1200px) {
+    column-gap: 15px;
+  }
+}
+
+.stock__stock li {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  picture {
+    display: flex;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  h3 {
+    @include font(500, 16px, 21px);
+    margin: 22px 0 6px 0;
+    color: $dark;
+  }
+
+  p {
+    @include font(600, 14px, 18px);
+    margin: 0;
+    color: $dark;
+  }
+}
+
+.stock__pages {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 200vw;
+    top: -37px;
+    left: -100vw;
+    height: 1px;
+    background-color: #f6f5f4;
+  }
+
+  a {
+    color: $dark;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.stock__pages ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0 0 0 -20px;
+}
+
+.stock__pages li {
+  margin: 0 13px 0 0;
+
+  a {
+    color: $grey;
+
+    &:hover {
+      color: #ff0000;
+    }
+  }
+}
+
+
+.stock__pages li:first-child {
+  a {
+    color: $dark;
+  }
+}
+
+
+@media (max-width: $desktop) {
+  .stock__stock {
+    margin: 0 0 71px 0;
+
+    ul {
+      grid-template-columns: repeat(3, 30.38%);
+      column-gap: 30px;
+      row-gap: 35px;
+      justify-content: space-between;
+    }
+
+    li {
+      picture {
+        img {
+          width: 206px;
+          height: 208px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: $tablet) {
+  .stock__stock {
+    margin: 0 0 42px 0;
+
+    ul {
+      grid-template-columns: repeat(2, 44.83%);
+      column-gap: 30px;
+      row-gap: 26px;
+      justify-content: space-between;
+    }
+
+    li {
+      h3 {
+
+        margin: 16px 0 6px 0;
+      }
+
+      picture {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .stock__pages {
+    &::before {
+      display: none;
+    }
+
+    justify-content: center;
+
+    > a {
+      display: none;
+    }
+
+    ul {
+      margin: 0 -22px 0 0;
+
+      li {
+        margin: 0 23px 0 0;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 320px) {
+  .stock__stock {
+    li {
+      picture {
+        img {
+          width: 130px;
+          height: 136px;
+        }
+      }
+    }
+  }
+}
+

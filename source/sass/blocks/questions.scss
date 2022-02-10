@@ -15,7 +15,7 @@
   h2 {
     font-family: "CormorantGaramond", "Times New Roman", serif;
 
-    @include font(600, 34px, 44px);
+    @include font(700, 34px, 44px);
     letter-spacing: 0.03em;
     text-align: center;
     margin: 0 0 50px 0;
@@ -48,7 +48,7 @@
     }
 
     @media (max-width: $tablet) {
-      @include font(500, 14px, 20px);
+      @include font(400, 14px, 20px);
       margin: 14px 55px 19px 24px;
     }
   }

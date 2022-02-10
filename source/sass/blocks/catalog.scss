@@ -1,0 +1,310 @@
+.catalog {
+  padding: 0 30px 0;
+}
+
+.catalog__wrapper {
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 80px 0 75px 0;
+
+  > a {
+    display: none;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.catalog__filter {
+  flex: 1 1 21.37%;
+  margin: 0 50px 0 0;
+}
+
+.catalog__stock {
+  flex: 1 1 74.36%;
+}
+
+
+@media (max-width: $desktop) {
+  .catalog__wrapper {
+    max-width: 678px;
+    flex-direction: column;
+    padding: 50px 0 75px 0;
+
+    > a {
+      display: flex;
+      width: 100%;
+      height: 68px;
+      align-items: center;
+      justify-content: center;
+      background-color: $brown;
+      color: $white;
+      margin: 0 0 50px 0;
+    }
+  }
+
+  .catalog__filter {
+    display: none;
+  }
+
+  .catalog__filter.active {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: $white;
+    z-index: 2;
+
+    .filter {
+      width: 420px;
+      box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
+      position: relative;
+
+      > a {
+        position: absolute;
+        top: 11px;
+        right: -19px;
+        display: block;
+      }
+    }
+
+    .filter__wrapper {
+      border: none;
+      margin: 0 0 40px 0;
+
+      .filter__filter {
+        padding: 61px 41px 20px 22px;
+      }
+
+      .filter__tumbler {
+        a {
+          @include font(500, 18px, 23px);
+        }
+      }
+
+      .filter__material {
+
+        padding: 34px 40px 34px 22px;
+      }
+
+      .filter__collection {
+
+        padding: 34px 40px 34px 22px;
+      }
+
+      .filter__price {
+        padding: 34px 40px 52px 22px;
+        border-bottom: 1px solid $brown;
+
+        .controls {
+          margin: 34px 0 0 0;
+
+          label {
+            @include font(500, 16px, 21px);
+
+            top: 15px;
+          }
+
+          label:nth-child(1n) {
+            width: 50px;
+            left: 13%;
+          }
+
+          label:last-child {
+            width: 50px;
+            left: 61%;
+          }
+
+          &__bar {
+            left: 15%;
+            width: 50%;
+          }
+
+          &__toggle {
+            top: -8px;
+            width: 18px;
+            height: 18px;
+
+            &--left {
+              left: 15%;
+            }
+
+            &--right {
+              left: 64%;
+            }
+          }
+        }
+      }
+    }
+
+    .filter__wrapper ul {
+      margin: 24px 0 0 0;
+
+      li {
+        margin: 0 0 17px 0;
+      }
+
+      input + label::before {
+        width: 18px;
+        height: 18px;
+      }
+
+      input:checked + label::after {
+        width: 18px;
+        height: 18px;
+      }
+
+      label {
+        @include font(500, 16px, 21px);
+        padding: 0 0 0 39px;
+      }
+    }
+  }
+
+
+  .catalog__stock {
+    flex: 1 100%;
+  }
+}
+
+@media (max-width: $tablet) {
+  .catalog {
+    padding: 0 15px 0;
+  }
+
+  .catalog__wrapper {
+    padding: 40px 0 65px 0;
+
+    > a {
+      margin: 0 0 40px 0;
+    }
+  }
+
+  .catalog__filter {
+    display: none;
+  }
+
+  .catalog__filter.active {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $white;
+
+    .filter {
+      width: 270px;
+      margin: 39px 0 0 25px;
+      position: relative;
+
+      > a {
+        position: absolute;
+        top: 21px;
+        right: -10px;
+        display: block;
+      }
+    }
+
+    .filter__wrapper {
+      border: none;
+      margin: 0 0 30px 0;
+
+      .filter__filter {
+        padding: 61px 21px 10px 22px;
+      }
+
+      .filter__tumbler {
+        a {
+          @include font(500, 18px, 23px);
+        }
+      }
+
+      .filter__material {
+
+        padding: 24px 22px 24px 22px;
+      }
+
+      .filter__collection {
+
+        padding: 24px 22px 24px 22px;
+      }
+
+      .filter__price {
+        padding: 25px 21px 41px 21px;
+        border-bottom: 1px solid $brown;
+
+        .controls {
+          margin: 34px 0 0 0;
+
+          label {
+            @include font(500, 16px, 21px);
+
+            top: 15px;
+          }
+
+          label:nth-child(1n) {
+            width: 50px;
+            left: 9%;
+          }
+
+          label:last-child {
+            width: 50px;
+            left: 68%;
+          }
+
+          &__bar {
+            left: 15%;
+            width: 60%;
+          }
+
+          &__toggle {
+            top: -8px;
+            width: 18px;
+            height: 18px;
+
+            &--left {
+              left: 13%;
+            }
+
+            &--right {
+              left: 73%;
+            }
+          }
+        }
+      }
+
+      .filter__wrapper ul {
+        margin: 24px 0 0 0;
+
+        li {
+          margin: 0 0 17px 0;
+        }
+
+        input + label::before {
+          width: 18px;
+          height: 18px;
+        }
+
+        input:checked + label::after {
+          width: 18px;
+          height: 18px;
+        }
+
+        label {
+          @include font(500, 16px, 21px);
+          padding: 0 0 0 39px;
+        }
+      }
+    }
+  }
+
+  .catalog__stock {
+    flex: 1 100%;
+  }
+}
