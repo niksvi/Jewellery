@@ -27,22 +27,7 @@
 
   @media (max-width: $desktop) {
     flex: 1 1 100%;
-    margin: 0 0 47px 0;
-
-    form {
-      label {
-        margin: 0 10px 0 0;
-      }
-
-      button {
-        padding: 0 0 10px 0;
-        margin: 0 10px 0 0;
-
-        span {
-          margin: 0 14px 0 0;
-        }
-      }
-    }
+    margin: 0 12px 43px 0;
 
     p {
       margin: 0 0 45px 0;
@@ -50,6 +35,8 @@
   }
 
   @media (max-width: $tablet) {
+    margin-right: 0;
+
     h2 {
       max-width: 213px;
       margin: 0 0 14px 0;
@@ -58,28 +45,6 @@
     p {
       max-width: 226px;
       margin: 0 0 41px 0;
-    }
-
-    form {
-      label {
-        padding: 0 0 10px 0;
-        margin: 0;
-      }
-
-      input {
-        width: 150px;
-        font-size: 14px;
-        max-width: 180px;
-      }
-
-      button {
-        padding: 0 0 8px 0;
-        margin: 0;
-
-        span {
-          margin: 0 13px 0 0;
-        }
-      }
     }
   }
 }
@@ -138,6 +103,43 @@
   svg {
     stroke: $white;
   }
+
+  @media (max-width: $desktop) {
+    label {
+      margin: 0 10px 0 0;
+    }
+
+    button {
+      padding: 0 0 10px 0;
+      margin: 0;
+
+      span {
+        margin: 0 14px 0 0;
+      }
+    }
+  }
+
+  @media (max-width: $tablet) {
+    label {
+      padding: 0 0 10px 0;
+      margin: 0;
+    }
+
+    input {
+      width: 150px;
+      font-size: 14px;
+      max-width: 180px;
+    }
+
+    button {
+      padding: 0 0 8px 0;
+      margin: 0;
+
+      span {
+        margin: 0 13px 0 0;
+      }
+    }
+  }
 }
 
 .contacts__purchase {
@@ -161,11 +163,11 @@
   list-style: none;
 
   li {
-    margin: 0 0 20px 0;
+    margin-bottom: 22px;
   }
 
   li:last-child {
-    margin: 0 0 0 0;
+    margin: 0;
   }
 
   a {
@@ -189,7 +191,7 @@
 
   @media (max-width: $tablet) {
     flex: 1 0 100%;
-    margin: 0 0 50px 0;
+    margin: 0 0 45px 0;
   }
 }
 
@@ -199,11 +201,11 @@
   list-style: none;
 
   li {
-    margin: 0 0 20px 0;
+    margin-bottom: 22px;
   }
 
   li:last-child {
-    margin: 0 0 0 0;
+    margin: 0;
   }
 
   a {
@@ -222,7 +224,7 @@
   list-style: none;
 
   li {
-    margin: 0 0 20px 0;
+    margin-bottom: 22px;
     width: inherit;
 
     a:hover {
@@ -280,7 +282,7 @@
         svg {
           width: 12px;
           height: 21px;
-          margin: -3px 14px 0 0;
+          margin: -3px 16px 0 0;
         }
       }
 
@@ -300,6 +302,18 @@
       svg {
         width: 20px;
         height: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .contacts__purchase,
+  .contacts__about,
+  .contacts__contacts {
+    ul {
+      li {
+        margin-bottom: 21px;
       }
     }
   }

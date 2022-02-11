@@ -22,7 +22,7 @@
     "stylelint": "^13.13.1",
     "stylelint-config-htmlacademy": "^0.1.10",
     "eslint": "^7.28.0",
-    "eslint-config-htmlacademy": "^4.1.0"
+    "eslint-config-htmlacademy": "5.0.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",

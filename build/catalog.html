@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Jewellery</title>
+  <title>Catalog</title>
   <meta name="description" content="Jewellery store, is made of solid gold, silver or leather, contains precious and semiprecious stones and crystals.">
   <link rel="preload" href="fonts/poppins-400.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/poppins-500.woff2" as="font" crossorigin="">
@@ -80,6 +80,25 @@
       <div class="page-main__wrapper">
         <h1 class="visually-hidden">Jewellery</h1>
 
+        <div class="popup-container">
+          <div class="popup">
+            <div class="popup__wrapper">
+              <h2 class="visually-hidden">Popup</h2>
+              <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
+                <a href="#">
+                  <img src="img/popup/close-icon.svg" width="14" height="14" alt="Close popup">>
+                </a>
+                <h2>Log In</h2>
+                <label for="mail"><input id="mail" name="mail" type="email" placeholder="Your E-mail" required=""></label>
+                <label for="password"><input id="password" name="password" type="password" placeholder="Password" required=""></label>
+                <a href="#">Forgot your password?</a>
+                <button type="submit" class="button button--popup">Log In</button>
+                <p>Don’t have an account?<a href="#">Sign up</a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+
         <section class="catalog-promo">
           <div class="catalog-promo__wrapper">
             <h2>ALL JEWELLERY</h2>
@@ -150,7 +169,7 @@
                       </svg>
                     </a>
                   </div>
-                  <!-- бегунок для цен -->
+
                   <div class="controls">
                     <div class="controls__scale">
                       <div class="controls__bar"></div>
@@ -166,7 +185,9 @@
               <button type="button" class="button button--clear">Clear All</button>
             </form>
           </div>
+
           <a href="#">Filter</a>
+
           <div class="catalog__stock stock">
             <div class="stock__wrapper">
               <div class="stock__stock">

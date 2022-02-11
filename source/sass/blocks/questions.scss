@@ -42,6 +42,8 @@
     margin: 8px 0 42px 48px;
     max-width: 527px;
 
+    @include font(400, 16px, 21px);
+
     @media (max-width: $desktop) {
       max-width: 534px;
       margin: 25px 0 45px 48px;
@@ -136,7 +138,7 @@
 
 @media (max-width: $tablet) {
   .questions__delivery {
-    &.tumbler {
+    .tumbler {
       span {
         max-width: 145px;
       }
@@ -144,7 +146,7 @@
   }
 
   .questions__payment {
-    &.tumbler {
+    .tumbler {
       span {
         max-width: 165px;
       }
@@ -152,7 +154,7 @@
   }
 
   .questions__return {
-    &.tumbler {
+    .tumbler {
       span {
         br {
           display: block;
