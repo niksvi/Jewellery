@@ -27,11 +27,11 @@
 
     > a {
       top: 20px;
+    }
 
-      svg {
-        width: 52px;
-        height: 52px;
-      }
+    > a svg {
+      width: 52px;
+      height: 52px;
     }
   }
 }
@@ -97,10 +97,8 @@
     background-color: $brown;
 
     .page-header__upper-row {
-      > a {
-        svg {
-          fill: $white;
-        }
+      > a svg {
+        fill: $white;
       }
     }
   }
@@ -114,10 +112,8 @@
     background-color: $brown;
 
     .page-header__upper-row {
-      > a {
-        svg {
-          fill: $white;
-        }
+      > a svg {
+        fill: $white;
       }
 
       input {

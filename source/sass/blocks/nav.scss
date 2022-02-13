@@ -67,36 +67,37 @@
 
     .nav__main {
       display: block;
+    }
 
-      ul {
-        @include font(500, 24px, 36px);
+    .nav__main ul {
+      @include font(500, 24px, 36px);
 
-        li {
-          margin: 0 0 21px 0;
-        }
+      li {
+        margin: 0 0 21px 0;
+      }
 
-        a {
-          color: $white;
-        }
+      a {
+        color: $white;
       }
     }
 
     .nav__nav {
       display: block;
       padding: 19px 0 25px 0;
+    }
 
-      ul {
-        @include font(500, 18px, 23px);
+    .nav__nav ul {
+      @include font(500, 18px, 23px);
 
-        li {
-          margin: 0 0 20px 0;
-        }
+      li {
+        margin: 0 0 20px 0;
+      }
 
-        a {
-          color: rgba(255, 255, 255, 0.75);
-        }
+      a {
+        color: rgba(255, 255, 255, 0.75);
       }
     }
+
 
     .nav__login {
       display: block;

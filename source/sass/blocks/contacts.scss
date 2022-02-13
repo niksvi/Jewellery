@@ -112,10 +112,10 @@
     button {
       padding: 0 0 10px 0;
       margin: 0;
+    }
 
-      span {
-        margin: 0 14px 0 0;
-      }
+    span {
+      margin: 0 14px 0 0;
     }
   }
 
@@ -134,10 +134,10 @@
     button {
       padding: 0 0 8px 0;
       margin: 0;
+    }
 
-      span {
-        margin: 0 13px 0 0;
-      }
+    span {
+      margin: 0 13px 0 0;
     }
   }
 }
@@ -253,6 +253,49 @@
       color: $white;
     }
   }
+
+  @media (max-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      margin: 0 14px 0 0;
+    }
+
+    a span {
+      display: none;
+    }
+
+
+    li:first-child svg {
+      width: 12px;
+      height: 21px;
+      margin: -3px 16px 0 0;
+    }
+
+
+    li:first-child + li svg {
+      width: 20px;
+      height: 21px;
+      margin: -3px 16px 0 0;
+    }
+
+    li:nth-child(3n) svg {
+      width: 20px;
+      height: 21px;
+      margin: -3px 16px 0 0;
+    }
+
+
+    li:last-child {
+      margin: 0;
+    }
+
+    li:last-child svg {
+      width: 20px;
+      height: 18px;
+    }
+  }
 }
 
 .contacts__contacts {
@@ -261,49 +304,6 @@
 
   @media (max-width: $desktop) {
     margin: 0;
-  }
-
-  @media (max-width: $tablet) {
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-
-      li {
-        margin: 0 14px 0 0;
-      }
-
-      a {
-        span {
-          display: none;
-        }
-      }
-
-      li:first-child {
-        svg {
-          width: 12px;
-          height: 21px;
-          margin: -3px 16px 0 0;
-        }
-      }
-
-      li:first-child + li,
-      li:nth-child(3n) {
-        svg {
-          width: 20px;
-          height: 21px;
-          margin: -3px 16px 0 0;
-        }
-      }
-    }
-
-    li:last-child {
-      margin: 0;
-
-      svg {
-        width: 20px;
-        height: 18px;
-      }
-    }
   }
 }
 

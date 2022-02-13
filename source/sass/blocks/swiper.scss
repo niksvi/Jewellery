@@ -59,45 +59,45 @@
 
 .swiper-slide {
   margin: 0 0 25px 0;
+}
 
-  a {
+.swiper-slide a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $dark;
+
+  h3 {
+    @include font(500, 16px, 21px);
+    margin: 19px 0 7px 0;
+  }
+
+  p {
+    @include font(600, 14px, 18px);
+    margin: 0 0 5px 0;
+  }
+
+  picture {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: $dark;
+  }
 
-    h3 {
-      @include font(500, 16px, 21px);
-      margin: 19px 0 7px 0;
+  img {
+    width: 100%;
+    height: 100%;
+
+    @media (max-width: $desktop) {
+      width: 324px;
+      height: 340px;
     }
 
-    p {
-      @include font(600, 14px, 18px);
-      margin: 0 0 5px 0;
-    }
-
-    picture {
-      display: flex;
-    }
-
-    img {
+    @media (max-width: $tablet) {
       width: 100%;
       height: 100%;
+    }
 
-      @media (max-width: $desktop) {
-        width: 324px;
-        height: 340px;
-      }
-
-      @media (max-width: $tablet) {
-        width: 100%;
-        height: 100%;
-      }
-
-      @media (max-width: 320px) {
-        width: 130px;
-        height: 136px;
-      }
+    @media (max-width: 320px) {
+      width: 130px;
+      height: 136px;
     }
   }
 }
@@ -112,10 +112,8 @@
     }
 
     &:nth-child(50n+3) {
-      a {
-        h3 {
-          margin: 22px -14px 7px 0;
-        }
+      a h3 {
+        margin: 22px -14px 7px 0;
       }
     }
   }
@@ -145,10 +143,8 @@
     }
 
     &:nth-child(50n+3) {
-      a {
-        h3 {
-          margin: 16px 0 7px 0;
-        }
+      a h3 {
+        margin: 16px 0 7px 0;
       }
     }
   }

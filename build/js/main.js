@@ -43,7 +43,7 @@ import './vendor.js';
 
   if (tumbler) {
     tumbler.forEach((element) => {
-      element.addEventListener('click', (evt) => {
+      function toggleTumbler(evt) {
         evt.preventDefault();
         let parent = element.parentNode;
         if (parent.classList.contains('active')) {
@@ -54,7 +54,8 @@ import './vendor.js';
             parent.classList.add('active');
           });
         }
-      });
+      }
+      element.addEventListener('click', toggleTumbler);
     });
   }
 
