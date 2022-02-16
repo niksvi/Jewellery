@@ -63,6 +63,7 @@
   button {
     font-family: "Poppins", "Arial", sans-serif;
     font-style: normal;
+    cursor: pointer;
 
     @include font(500, 16px, 21px);
     display: flex;

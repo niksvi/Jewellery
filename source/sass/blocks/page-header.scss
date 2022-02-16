@@ -110,6 +110,10 @@
     width: 100vw;
     overflow-y: scroll;
     background-color: $brown;
+    min-height: 100vh;
+
+    /* stylelint-disable-next-line */
+    min-height: -webkit-fill-available;
 
     .page-header__upper-row {
       > a svg {

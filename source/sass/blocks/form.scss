@@ -147,3 +147,16 @@
     }
   }
 }
+
+@media (max-width: $desktop) {
+  .filter__filter {
+    .filter__tumbler a {
+      padding: 0;
+
+      svg {
+        width: 23px;
+        height: 12px;
+      }
+    }
+  }
+}

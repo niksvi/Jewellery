@@ -1,8 +1,10 @@
 .promo {
   background: $brown url("../img/main-page/promo_bg-desk.png") 50% 0/100% 100% no-repeat;
+  background-size: cover;
 
   @media (max-width: $desktop) {
     background: $brown url("../img/main-page/promo_bg-tab.png") 50% 0/100% 100% no-repeat;
+    background-size: cover;
   }
 
   @media (max-width: $tablet) {
@@ -11,6 +13,7 @@
 
   @media (max-width: 450px) {
     background: $brown url("../img/main-page/promo_bg-mob.png") 50% 0/100% 100% no-repeat;
+    background-size: cover;
   }
 
   h2 {

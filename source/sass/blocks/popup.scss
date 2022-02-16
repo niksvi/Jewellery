@@ -14,11 +14,25 @@
   left: 50%;
   transform: translate(-50%, 0);
   width: 430px;
+  overflow: auto;
+  height: 100%;
 
   &.active,
   &.no-js {
     display: block;
     z-index: 2;
+  }
+}
+
+.popup__wrapper {
+  margin-bottom: 100px;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 50px;
   }
 }
 
@@ -53,6 +67,8 @@
       width: 100%;
       padding: 0 0 8px 0;
       border: 0;
+      border-radius: 0;
+      appearance: none;
       border-bottom: 1px solid $dark;
       background-color: inherit;
     }
